@@ -43,3 +43,25 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+  gem 'pry'
+
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
+  gem 'rspec-rails', '~> 3.0'
+end
+
+# Device authentication
+gem 'devise'
+
+gem 'carrierwave'
+
+# Bootstrap integration
+gem 'bootstrap-sass', '~> 3.3.3'
+
+gem "rails_12factor", group: :production
